@@ -8,7 +8,7 @@ import uuid
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,origins="")
 executor = ThreadPoolExecutor(max_workers=2)
 
 tasks = {}
@@ -89,4 +89,4 @@ def get_sentiment(task_id):
         return jsonify({'error': 'Task ID not found'}), 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8000)

@@ -1,0 +1,412 @@
+.svg {
+  width: 100%;
+}
+
+.mainBody {
+  display: flex;
+}
+
+.mainBody .centerPanel {
+  width: 73%;
+  height: 100%;
+}
+
+.mainBody .sidePanel {
+  width: 27%;
+  background-color: #f4f4f4;
+  padding: 0 var(--fs50);
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mainBody .sidePanel .sidePanelFixed {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: var(--fs30) 0 var(--fs20) 0;
+  z-index: 2;
+}
+
+.mainBody .sidePanel .sidePanelScroll {
+  padding: var(--fs10) 0 var(--fs30) 0;
+  width: 100%;
+}
+
+.mainBody .sidePanel .sidePanelFixed .sidePanelHeading {
+  font-size: var(--fs25);
+}
+
+.mainBody .sidePanel .sidePanelFixed .sidePanelCounts {
+  display: flex;
+  margin: var(--fs25) 0 var(--fs10) 0;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fs70);
+}
+
+.mainBody .sidePanel .sidePanelFixed .sidePanelCounts .sidePanelCount {
+  text-align: center;
+  font-size: var(--fs14);
+  color: var(--darkAsh);
+}
+
+.mainBody .sidePanel .sidePanelFixed .sidePanelCounts .sidePanelCount h4 {
+  font-size: var(--fs22);
+  color: var(--black);
+  font-family: Gotham-Bold;
+}
+
+.ongoingAgentCalls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs30);
+}
+
+.ongoingAgentCalls .ongoingAgentCall {
+  background-color: var(--white);
+  padding: var(--fs25) var(--fs25) var(--fs20) var(--fs30);
+  position: relative;
+}
+
+.ongoingAgentCalls .ongoingAgentCall .ongoingCallStatusAlert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+}
+.ongoingAgentCalls .ongoingAgentCall .ongoingCallStatusAlert.red {
+  animation: alertIndicate 01s linear infinite;
+}
+
+@keyframes alertIndicate {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ongoingAgentCalls .ongoingAgentCall .agentCallHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallHead .agentProfile {
+  display: flex;
+  align-items: center;
+  gap: var(--fs15);
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentProfile
+  .agentProfileImg {
+  display: flex;
+  width: var(--fs40);
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentProfile
+  .agentProfileName
+  h5 {
+  font-size: var(--fs16);
+  font-family: Gotham-Bold;
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentProfile
+  .agentProfileName
+  p {
+  font-size: var(--fs14);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallHead .agentCallLog {
+  display: flex;
+  align-items: center;
+  gap: var(--fs10);
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentCallLog
+  .agentCallLogImg {
+  display: flex;
+  width: var(--fs30);
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentCallLog
+  .agentCallLogTime
+  h4 {
+  font-size: var(--fs16);
+  font-family: Gotham-Bold;
+}
+
+.ongoingAgentCalls
+  .ongoingAgentCall
+  .agentCallHead
+  .agentCallLog
+  .agentCallLogTime
+  p {
+  font-size: var(--fs12);
+  text-align: center;
+  color: var(--darkAsh);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--darkAsh);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallBody ul {
+  display: flex;
+  align-items: center;
+  gap: var(--fs40);
+  padding: var(--fs20) 0 var(--fs15) 0;
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallBody ul li {
+  font-size: var(--fs14);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallBody .callStatusEmoji {
+  width: var(--fs20);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--fs10);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot .agentCallFootDetail h5 {
+  font-size: var(--fs17);
+  font-family: Gotham-Bold;
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot .agentCallFootDetail p {
+  font-size: var(--fs13);
+  color: var(--darkAsh);
+  margin-top: 3px;
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot ul {
+  display: flex;
+  align-items: center;
+  gap: var(--fs30);
+}
+
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot ul li {
+  width: var(--fs20);
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot ul li.badgeActive .badge {
+  display: flex;
+}
+.ongoingAgentCalls .ongoingAgentCall .agentCallFoot ul li .badge {
+  width: var(--fs10);
+  height: var(--fs10);
+  display: flex;
+  background-color: red;
+  position: absolute;
+  top: 15%;
+  right: -30%;
+  border-radius: 100px;
+  animation: badgeAnimation 1.3s infinite ease-in-out;
+  display: none;
+}
+@keyframes badgeAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* center section style  */
+.centerPanelContainer {
+  height: 100%;
+  padding: var(--fs25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.centerPanel .centerPanelTop {
+  height: 13%;
+  display: flex;
+  align-items: center;
+  padding-left: var(--fs30);
+}
+
+.centerPanel .centerPanelMiddle {
+  height: 39%;
+  padding: var(--fs20);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.centerPanel .centerPanelBottom {
+  height: 43%;
+  padding: var(--fs20);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.centerPanel .centerPanelTop .agentImg {
+  display: flex;
+  width: var(--fs70);
+}
+
+.centerPanel .centerPanelTop ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centerPanel .centerPanelTop ul li h3 {
+  font-size: var(--fs25);
+  font-family: Gotham-Bold;
+}
+
+.centerPanel .centerPanelTop ul li p {
+  font-size: var(--fs13);
+  color: var(--darkAsh);
+}
+
+.centerPanel .centerPanelMiddle .centerPanelSubHeader {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs22);
+}
+
+.centerPanel .centerPanelMiddle .centerPanelSubHeader .moreOption {
+  width: 150px;
+}
+
+.centerPanel .centerPanelMiddle .centerPanelMiddleBody {
+  height: 85%;
+}
+
+.centerPanel .centerPanelBottom .centerPanelSubHeader {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs22);
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody {
+  height: 85%;
+  overflow-y: scroll;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* .centerPanel .centerPanelBottom .centerPanelBottomBody::-webkit-scrollbar {
+    width: 4px; 
+    height: 4px; 
+    }
+    
+    .centerPanel .centerPanelBottom .centerPanelBottomBody::-webkit-scrollbar-thumb {
+        background: var(--darkAsh); 
+        border-radius: 10px; 
+        }
+  
+        .centerPanel .centerPanelBottom .centerPanelBottomBody::-webkit-scrollbar-thumb:hover {
+    background: var(--darkAsh); 
+  }
+  
+  .centerPanel .centerPanelBottom .centerPanelBottomBody::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+  } */
+.centerPanel .centerPanelBottom .centerPanelBottomBody table {
+  width: 100%;
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody table thead {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody table th {
+  font-size: var(--fs17);
+  padding: var(--fs10) 0;
+  border-bottom: 1px dashed var(--darkAsh);
+  text-align: left;
+  padding-left: var(--fs20);
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody table td {
+  font-size: var(--fs14);
+  padding: var(--fs10) 0;
+  padding-left: var(--fs20);
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody table td:last-child {
+  padding-left: var(--fs35);
+}
+
+.centerPanel .centerPanelBottom .centerPanelBottomBody table td .solutionIcon {
+  width: var(--fs20);
+}
+
+.centerPanel .centerPanelMiddle .centerPanelMiddleBody .chartWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.centerPanel
+  .centerPanelMiddle
+  .centerPanelMiddleBody
+  .chartWrapper
+  #splineChart {
+  width: 100%;
+  height: 100%;
+}
+
+.chatBox {
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000b3;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 5;
+}
+.chatBox.open {
+  display: flex;
+  opacity: 1;
+}

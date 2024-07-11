@@ -1,0 +1,736 @@
+.dashboardScreen {
+  font-family: DMSans-Regular;
+  width: 100%;
+  height: 100dvh;
+}
+.agentBodyContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* border: 1px solid red; */
+  padding: 1rem 3rem;
+  background-color: #f4f4f4;
+}
+
+.agentBodyContent .pageHeader {
+  height: 5%;
+  /* border: 1px solid red; */
+}
+.agentBodyContent .pageHeader h3 {
+  color: var(--bg-gray-100);
+  font-weight: 600;
+}
+
+.agentBodyContent .topSection {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+}
+.agentBodyContent .topSection .totalCallPart {
+  width: 25%;
+  height: 100%;
+  padding: 1vw;
+  border-radius: 5px;
+  box-shadow: #43475545 0px 0px 0.25em, #5a7dbc0d 0px 0.25em 1em;
+  background-color: #fff;
+}
+.agentBodyContent .topSection .totalCallPart .cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.agentBodyContent .topSection .totalCallPart .cardHeader h3 {
+  color: var(--bg-gray-100);
+  font-size: var(--fs18);
+}
+.agentBodyContent .topSection .totalCallPart .cardHeader .moreOption {
+  width: 130px;
+}
+.agentBodyContent .topSection .totalCallPart .cardBody {
+  height: 100%;
+}
+.agentBodyContent .topSection .totalCallPart .cardBody .chartContainer {
+  width: 100%;
+  height: 75%;
+}
+.agentBodyContent .topSection .totalCallPart .cardBody .cardSeaction ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.agentBodyContent .topSection .totalCallPart .cardBody .cardSeaction ul li {
+  width: 33%;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 0rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.agentBodyContent
+  .topSection
+  .totalCallPart
+  .cardBody
+  .cardSeaction
+  ul
+  li
+  span {
+  color: var(--bgBlack);
+  font-size: var(--fs23);
+  font-weight: 600;
+}
+.agentBodyContent .topSection .totalCallPart .cardBody .cardSeaction ul li p {
+  color: var(--bgGray);
+  font-size: var(--fs16);
+  text-transform: capitalize;
+}
+
+.agentBodyContent .topSection .customerAndServicePart {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  box-shadow: #43475545 0px 0px 0.25em, #5a7dbc0d 0px 0.25em 1em;
+  border-radius: 5px;
+  padding: 1vw;
+  background-color: #fff;
+}
+
+.agentBodyContent .topSection .customerAndServicePart .customerPart {
+  width: 80%;
+  height: 100%;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardHeader
+  h3 {
+  color: var(--bgBlack);
+  font-size: var(--fs18);
+  font-weight: 600;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardHeader
+  .moreOption {
+  width: 130px;
+}
+.agentBodyContent .topSection .customerAndServicePart .customerPart .cardBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .chartContainer {
+  width: 60%;
+  height: 93%;
+}
+
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .averagePart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .averagePart
+  .smileImg
+  svg {
+  width: 100px !important;
+  height: 45px !important;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .averagePart
+  .averageStatus
+  p:first-child {
+  color: var(--bgBlack);
+  font-size: var(--fs30);
+  font-weight: 600;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .averagePart
+  .averageStatus
+  p:first-child
+  span {
+  color: var(--bgGray);
+  font-size: var(--fs18);
+  font-weight: 500;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .averagePart
+  .averageStatus
+  p:last-child {
+  color: var(--bgGray);
+  font-size: var(--fs13);
+  font-weight: 500;
+}
+
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .cardSeaction
+  ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .cardSeaction
+  ul
+  li {
+  width: 25%;
+  display: flex;
+  gap: 0rem;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .cardSeaction
+  ul
+  li
+  span {
+  color: var(--bgBlack);
+  font-size: var(--fs20);
+  font-weight: 600;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .customerPart
+  .cardBody
+  .detailsPart
+  .cardSeaction
+  ul
+  li
+  p {
+  color: var(--bgGray);
+  font-size: var(--fs15);
+  text-transform: capitalize;
+  width: fit-content;
+  text-align: center;
+}
+.agentBodyContent .topSection .customerAndServicePart .servicePart {
+  /* width: 50%; */
+  width: 40%;
+  height: 100%;
+  padding: 0 1rem;
+  position: relative;
+}
+.agentBodyContent .topSection .customerAndServicePart .servicePart::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff 0,
+    #fff 5px,
+    #d0d0d0 8px,
+    #d0d0d0 15px
+  );
+  z-index: 2;
+  /* writing-mode: vertical-rl; */
+}
+
+.agentBodyContent .topSection .customerAndServicePart .servicePart .cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardHeader
+  h3 {
+  color: var(--bg-gray-100);
+  font-size: var(--fs18);
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardHeader
+  .moreOption {
+  width: 130px;
+}
+.agentBodyContent .topSection .customerAndServicePart .servicePart .cardBody {
+  margin-top: 1rem;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+  position: relative;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: var(--lightAsh);
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus
+  .iconsPart
+  svg {
+  width: var(--fs30);
+  height: var(--fs30);
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus
+  .iconsPart
+  p {
+  font-size: var(--fs15);
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus
+  .countText {
+  font-size: var(--fs20);
+  font-weight: 600;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus
+  .infoPart {
+  font-size: var(--fs20);
+  font-weight: 600;
+}
+.agentBodyContent
+  .topSection
+  .customerAndServicePart
+  .servicePart
+  .cardBody
+  ul
+  .serviceStatus
+  .infoPart
+  p:last-child {
+  color: var(--bgGray);
+  font-size: var(--fs15);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.agentBodyContent .bottomSection {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+}
+
+.agentBodyContent .bottomSection .topRecentCalls {
+  width: 30%;
+  height: 100%;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  box-shadow: #43475545 0px 0px 0.25em, #5a7dbc0d 0px 0.25em 1em;
+  background-color: #fff;
+  overflow: hidden;
+}
+.agentBodyContent .bottomSection .topRecentCalls h2 {
+  color: var(--bgBlack);
+  font-size: var(--fs16);
+  font-weight: 600;
+  margin: 0vw 0 0.7vw 0;
+  padding: 0.5vw 0 0 0;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs14);
+  overflow: auto;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul li {
+  width: 100%;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul li .levelTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul li .levelTitle p {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-size: var(--fs15);
+  text-transform: capitalize;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul li .levelTitle span {
+  font-weight: 600;
+  font-size: var(--fs15);
+  display: flex;
+}
+
+.agentBodyContent .bottomSection .topRecentCalls ul li .outerDiv {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  margin-top: 0.5vw;
+}
+.agentBodyContent .bottomSection .topRecentCalls ul li .outerDiv .innnerDiv {
+  background-color: var(--bgBlack);
+  width: 50%;
+  height: 100%;
+}
+.percentage-50 {
+  width: 50% !important;
+}
+.percentage-70 {
+  width: 70% !important;
+}
+.percentage-30 {
+  width: 30% !important;
+}
+
+.agentBodyContent .bottomSection .callsVolumePart {
+  width: 55%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 1vw;
+  box-shadow: #43475545 0px 0px 0.25em, #5a7dbc0d 0px 0.25em 1em;
+  background-color: #fff;
+}
+.agentBodyContent .bottomSection .callsVolumePart .cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.agentBodyContent .bottomSection .callsVolumePart .cardHeader h3 {
+  color: var(--bg-gray-100);
+  font-size: var(--fs18);
+}
+.agentBodyContent .bottomSection .callsVolumePart .cardHeader .moreOption {
+  width: 130px;
+}
+.agentBodyContent .bottomSection .callsVolumePart .cardBody {
+  height: 100%;
+}
+.agentBodyContent .bottomSection .callsVolumePart .chartContainer {
+  height: 100%;
+}
+.agentBodyContent .bottomSection .averageTimePart {
+  width: 35%;
+  height: 100%;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  padding: 1vw;
+  box-shadow: #43475545 0px 0px 0.25em, #5a7dbc0d 0px 0.25em 1em;
+  background-color: #fff;
+}
+.agentBodyContent .bottomSection .averageTimePart .statusReport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--fs14);
+}
+.agentBodyContent .bottomSection .averageTimePart .statusReport .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.agentBodyContent .bottomSection .averageTimePart .statusReport .card h3 {
+  font-size: var(--fs30);
+  color: var(--bgBlack);
+}
+.agentBodyContent .bottomSection .averageTimePart .statusReport .card p {
+  color: var(--bgGray);
+  font-size: var(--fs20);
+  text-transform: capitalize;
+}
+.agentBodyContent .bottomSection .averageTimePart .averageTimeProgress {
+  width: 100%;
+  height: 75%;
+  /* border: 1px solid red; */
+  box-shadow: none;
+  /* margin-top: 1rem; */
+  padding: 0;
+}
+.agentBodyContent .bottomSection .averageTimePart .averageTimeProgress ul {
+  height: 100%;
+}
+
+/* call show modal  */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: #000000cc;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--fs30);
+  /* display: none; */
+}
+
+.modalOverlay .incomeCallModal {
+  min-width: 20rem;
+  width: 40%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modalOverlay .incomeCallModal .detailsPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.modalOverlay .incomeCallModal .detailsPart .counter {
+  color: var(--bgBlack);
+  font-size: var(--fs30);
+  margin-bottom: 1vw;
+}
+.modalOverlay .incomeCallModal .detailsPart .imgPart {
+  width: 7rem;
+  border-radius: 100px;
+  border: 5px solid transparent;
+  transition: all 0.4s;
+}
+.modalOverlay .incomeCallModal .detailsPart .imgPart.hotActive {
+  border-color: #ff0000;
+}
+
+.modalOverlay .incomeCallModal .detailsPart .userAndNoPart {
+  text-align: center;
+  margin-top: 1rem;
+}
+.modalOverlay .incomeCallModal .detailsPart .userAndNoPart h3 {
+  color: var(--bgBlack);
+  font-size: var(--fs30);
+}
+.modalOverlay .incomeCallModal .detailsPart .userAndNoPart p {
+  color: var(--bgGray);
+  font-size: var(--fs20);
+}
+.modalOverlay .incomeCallModal .detailsPart .userIdPart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.modalOverlay .incomeCallModal .callOptions {
+  border-top: 1px solid gray;
+  margin-top: 1rem;
+}
+
+.modalOverlay .incomeCallModal .callOptions ul {
+  display: flex;
+  gap: var(--fs30);
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1rem 0 0 0;
+}
+
+.modalOverlay .incomeCallModal .callOptions ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: var(--fs10);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.modalOverlay .incomeCallModal .callOptions ul li:hover {
+  transform: scale(0.95);
+}
+.modalOverlay .incomeCallModal .callOptions ul li svg {
+  width: var(--fs40);
+  height: var(--fs40);
+}
+.modalOverlay .incomeCallModal .callOptions ul li.callendBtn svg {
+  width: var(--fs70);
+  height: var(--fs70);
+}
+
+.modalOverlay .incomeCallModal .callOptions ul li p {
+  color: gray;
+}
+.modalOverlay .chatFloatBtn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.modalOverlay .chatFloatBtn button {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.7vw;
+  cursor: pointer;
+}
+.modalOverlay .chatFloatBtn button .badge {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  background-color: red;
+  position: absolute;
+  top: 1%;
+  right: 8%;
+  border-radius: 100px;
+  animation: badgeAnimation 1.3s infinite ease-in-out;
+}
+
+.modalOverlay .chatFloatBtn button svg {
+  width: var(--fs30);
+  height: var(--fs30);
+}
+
+@keyframes badgeAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.chatBoxContainer {
+  width: 30vw;
+  display: none;
+}
